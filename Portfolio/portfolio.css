@@ -1,0 +1,36 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+
+    background-color: rgb(199, 198, 198);
+
+}
+
+
+/* Configurando a barra de navegação*/
+nav{
+
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    
+}
+.menu a{
+
+    color: black;
+
+    text-decoration: none;
+    font-style: bold;
+    font-size: 1.5em;
+
+    padding: 20px;
+
+}
+.menu a:first-child{
+
+    text-decoration: underline;
+
+}
