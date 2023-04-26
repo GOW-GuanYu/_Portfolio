@@ -22,10 +22,12 @@ section a{
     background-color: white;
     border-radius: 15px;
 }
+p{
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Adicionando fontes */
-@import url('https;//fonts.googleopis.com/css2/family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /* Configurando a barra de navegação*/
@@ -53,6 +55,7 @@ nav{
 /*  Configurando seção de Apresentação */
 .apresentacao section{
     background-color: yellow;
+    font-family: 'Poppins', sans-serif;
 }
 .apresentacao{
     display: block;
@@ -69,7 +72,7 @@ nav{
     letter-spacing: 1px;
 }
 .apresentacao p{
-    background-color: blue;
+    background-color: white;
     width: 363px;
     margin: 5px 0px 0px 0px ;
     font-size: 2rem;
@@ -81,7 +84,8 @@ nav{
     overflow: hidden;
     border-right: 1px solid white;
 }
-/* Animação */
+
+/* Animações */
 @keyframes typing{
     from{
         width: 0;
@@ -99,6 +103,7 @@ section.conhecimento img{
     height: 200px;
 }
 
+/* Configurando o footer */
 footer{
-    background-color: aqua;
+    background-color: rgb(100, 255, 255);
 }
