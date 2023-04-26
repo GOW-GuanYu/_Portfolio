@@ -5,16 +5,14 @@
     font-family: sans-serif;
 }
 body{
-
     background-color: black;
-
 }
 main{
     color: white;
 }
 
 section{
-    margin: 20px 0px 20px 50px;
+    margin: 60px 0px 60px 50px;
 }
 section a{
     padding: 20px;
@@ -25,8 +23,7 @@ section a{
     border-radius: 15px;
 }
 
-/*Adicionando fonte*/
-
+/* Adicionando fontes */
 @import url('https;//fonts.googleopis.com/css2/family=Poppins&display=swap');
 
 
@@ -34,16 +31,19 @@ section a{
 /* Configurando a barra de navegação*/
 nav{
     background-color: rgb(27, 93, 235);
-    text-align: right;   
+    text-align: right;
+    top: 0;   
+    position: sticky;
 }
 .menu a{
     color: black;
 
     text-decoration: none;
     font-style: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
 
-    padding: 20px;
+    padding: 10px;
+    margin-right: 10px;
 }
 .menu a:hover{
     text-decoration: underline;
@@ -51,40 +51,54 @@ nav{
 }
 
 /*  Configurando seção de Apresentação */
+.apresentacao section{
+    background-color: yellow;
+}
 .apresentacao{
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    margin: 20px 0px 20px 20px;
-    font-family: 'Poppins', sans-serif;
+    display: block;
+    background-color: red;
+    margin: 100px auto auto 50px;
+    color: white;
 }
-
-/* Animação */
-.texto-animado p{
+.apresentacao h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+.apresentacao h4{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.apresentacao p{
+    background-color: blue;
+    width: 363px;
+    margin: 5px 0px 0px 0px ;
+    font-size: 2rem;
+    
     color: rgb(155, 0, 147);
-}
-.texto-animado{
-    border-right: 1px solid;
-    width: 89%;
+
+    animation: typing 2s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(22), cursor .4s step-end infinite alternate;
+    border-right: 1px solid white;
 }
-
-/* Animação do cursor */
-@keyframes cursor{
-    50%{ border-color: transparent;
+/* Animação */
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
     }
 }
 
-/* Animação com efeito de digitação */
-@keyframes typing{
-    from{ width: 0;}
-}
-
-
 /* Configurando a seção de conhecimentos - Ajustar tamanho de imagens no GIMP/Photoshop/Canva  */ 
-
 section.conhecimento img{
     width: 200px;
     height: 200px;
+}
+
+footer{
+    background-color: aqua;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .apresentacao{
+            margin: 100px auto auto 50px;
+        }
+        .apresentacao h1{
+            font-size: 4rem;
+            letter-spacing: 2px;
+        }
+        .apresentacao h4{
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .apresentacao p{
+            width: 300px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+
+            animation: typing 2s steps(24), blink 0,5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+        }
+
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+        }
+        @keyframes blink {
+            50%{
+                border-color: transparent;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="apresentacao">
+        <h4>Olá Mundo! Eu sou,</h4>               
+        <h1>Arthur Yvens.</h1>
+
+            <p>Desenvolvedor Front-end</p>               
+               
+
+    </div>
+</body>
+</html>
