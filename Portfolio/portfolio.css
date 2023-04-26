@@ -1,25 +1,42 @@
+/* Configurações Gerais */
 *{
-
     margin: 0px;
     padding: 0px;
-
+    font-family: sans-serif;
 }
 body{
 
-    background-color: rgb(199, 198, 198);
+    background-color: black;
 
 }
+main{
+    color: white;
+}
+
+section{
+    margin: 20px 0px 20px 50px;
+}
+section a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    
+    background-color: white;
+    border-radius: 15px;
+}
+
+/*Adicionando fonte*/
+
+@import url('https;//fonts.googleopis.com/css2/family=Poppins&display=swap');
+
 
 
 /* Configurando a barra de navegação*/
 nav{
-
-    background-color: rgb(255, 255, 255);
-    text-align: right;
-    
+    background-color: rgb(27, 93, 235);
+    text-align: right;   
 }
 .menu a{
-
     color: black;
 
     text-decoration: none;
@@ -27,10 +44,39 @@ nav{
     font-size: 1.5em;
 
     padding: 20px;
-
 }
-.menu a:first-child{
-
+.menu a:hover{
     text-decoration: underline;
+    text-decoration-color: rgb(236, 75, 0);
+}
 
+/*  Configurando seção de Apresentação */
+.apresentacao{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin: 20px 0px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animação */
+.texto-animado p{
+    color: rgb(155, 0, 147);
+}
+.texto-animado{
+    border-right: 1px solid;
+    width: 89%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22), cursor .4s step-end infinite alternate;
+}
+
+/* Animação do cursor */
+@keyframes cursor{
+    50%{ border-color: transparent;
+    }
+}
+
+/* Animação com efeito de digitação */
+@keyframes typing{
+    from{ width: 0;}
 }
