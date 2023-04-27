@@ -5,10 +5,17 @@
     font-family: sans-serif;
 }
 body{
-    background-color: rgb(0, 53, 0);
+    background-color: black;
 }
 main{
     color: white;
+}
+.anunciado{
+    text-align: center;
+    text-indent: 0px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 section{
@@ -22,10 +29,16 @@ section a{
     background-color: white;
     border-radius: 15px;
 }
+
 p{
     font-family: 'Poppins', sans-serif;
 }
 
+#sobre{
+    text-align:justify;
+    text-indent: 20px;
+    margin: 100px 20px 100px 20px;
+}
 /* Adicionando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -36,6 +49,7 @@ nav{
     text-align: right;
     top: 0;   
     position: sticky;
+    padding: 10px;
 }
 .menu a{
     color: black;
@@ -54,12 +68,10 @@ nav{
 
 /*  Configurando seção de Apresentação */
 .apresentacao section{
-    background-color: yellow;
     font-family: 'Poppins', sans-serif;
 }
 .apresentacao{
     display: block;
-    background-color: red;
     margin: 100px auto auto 50px;
     color: white;
 }
@@ -72,8 +84,7 @@ nav{
     letter-spacing: 1px;
 }
 .apresentacao p{
-    background-color: white;
-    width: 363px;
+    width: 362px;
     margin: 5px 0px 0px 0px ;
     font-size: 2rem;
     
@@ -83,6 +94,15 @@ nav{
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid white;
+}
+
+#links{
+
+    display: inline-block;
+    margin: 60px 0px 40px 0px;
+    
+    color: white;
+
 }
 
 /* Animações */
@@ -102,6 +122,13 @@ section.conhecimento img{
     width: 200px;
     height: 200px;
 }
+
+/* Configurando seção Projetos */
+#projetos{
+    text-align: center;
+}
+
+
 
 /* Configurando o footer */
 footer{
