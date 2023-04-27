@@ -34,11 +34,12 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
-#sobre{
+#sobre{ /* Posicionar corretamento no codigo */
     text-align:justify;
     text-indent: 20px;
     margin: 100px 20px 100px 20px;
 }
+
 /* Adicionando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -55,8 +56,8 @@ nav{
     color: black;
 
     text-decoration: none;
-    font-style: bold;
-    font-size: 1.3em;
+    font-style: bolder;
+    font-size: 1.2em;
 
     padding: 10px;
     margin-right: 10px;
@@ -117,7 +118,7 @@ nav{
     }
 }
 
-/* Configurando a seção de conhecimentos - Ajustar tamanho de imagens no GIMP/Photoshop/Canva  */ 
+/* Configurando a seção de conhecimentos - Ajustar tamanho de imagens no GIMP/Photoshop/Canva, mudar de lugar no codigo */ 
 section.conhecimento img{
     width: 200px;
     height: 200px;
@@ -126,8 +127,34 @@ section.conhecimento img{
 /* Configurando seção Projetos */
 #projetos{
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
+#projetos h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+.projeto img{
+    width: 100%;
+}
+.projeto{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px; 
+    width: 30%;
 
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 0.8px;
+}
+.projeto a{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
 
 /* Configurando o footer */
