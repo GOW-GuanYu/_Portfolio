@@ -1,3 +1,6 @@
+/* Adicionando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* Configurações Gerais */
 *{
     margin: 0px;
@@ -39,10 +42,6 @@ p{
     text-indent: 20px;
     margin: 100px 20px 100px 20px;
 }
-
-/* Adicionando fontes */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 
 /* Configurando a barra de navegação*/
 nav{
