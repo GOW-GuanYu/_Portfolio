@@ -10,3 +10,13 @@ function ativatyping(elemento){
 
 const titulo = document.querySelector('.typing')
 ativatyping(titulo)
+
+//adicionando "animação" menu
+
+const ativaMenu = document.querySelector('.fa-bars');
+
+ativaMenu.addEventListener('click', ()=>(
+    ativaMenu.classList.toggle('fa-x') //adiciona fa-x no font awesome
+))
+
+

@@ -35,23 +35,36 @@ header span{
     color: white;
 }
 
-/* Configurando o Nav */
+/* Configurando o Nav  */
 
 header .navegacao{
     display: flex;
-    gap: 10px;
-    align-items: center;   
+    gap: 30px;
+    align-items: center;  
 }
 header .navegacao li a{
-    padding: 10px;
     color: white;
+    width: 0px;
+    height: 0px;
     font-size: 1.3em;
     font-family: sans-serif;
 }
-header .navegacao li a:hover{
-    text-decoration: underline;
-    text-decoration-color: purple;
+header .navegacao li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
 }
+header .navegacao li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 2px solid purple;
+}
+
 /* Configurando a Section */
 
 .section-div{
@@ -70,6 +83,9 @@ header .navegacao li a:hover{
     align-self: start;
     display: grid;
     gap: 30px;
+}
+.section-div img{
+    border-radius: 50%;
 }
 .section-div div h2{
     font-family: 'Poppins', sans-serif;
@@ -129,7 +145,7 @@ main{
     background-color: #111;
     color: grey;
 }
-main .sobre{
+main #sobre{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 60px;
@@ -146,9 +162,9 @@ main .sobre{
 }
 .sobre-titulo h1{
     font-size: 2.5em;
-    color: crimson;
+    color: purple;
     margin-bottom: 15px;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: sans-serif;
 }
 .sobre-titulo p{
     color: grey;
@@ -166,9 +182,9 @@ main .sobre{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: crimson;
+    background-color: purple;
 }
-.sobre img{
+#sobre img{
     cursor: pointer;
     grid-row: 2;
     max-width: 100%;
@@ -198,7 +214,7 @@ main .sobre{
     grid-column: 1/-1;
 }
 .sobre_texto h1::after{
-    background-color: crimson;
+    background-color: purple;
     height: 6px;
     width: 60px;
     margin: 20px 0px;
@@ -221,7 +237,7 @@ main .sobre{
     align-items: center;
 }
 .sobre_info i{
-    color: crimson;
+    color: purple;
     padding-right: 10px;
     font-size: 1.5em;
 }
@@ -272,7 +288,7 @@ main .sobre{
 }
 .my_service ul li i{
     font-size: 2.7em;
-    color: crimson;
+    color: rgba(58, 170, 207, 0.445);
 }
 .my_service ul li h3{
     color: white;
@@ -311,15 +327,53 @@ main .sobre{
 .my_service li:hover::before{
     width: 100%;
     height: 100%;
-    border-top: 2px solid crimson;
-    border-right: 2px solid crimson;
+    border-top: 2px solid purple;
+    border-right: 2px solid purple;
     border-radius: 6px;
 }
 .my_service li:hover:after{
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid crimson;
-    border-left: 2px solid crimson;
+    border-bottom: 2px solid purple;
+    border-left: 2px solid purple; /*mudar para purple*/
+}
+
+/* Responsividade */
+
+@media(max-width: 1045px){
+    .section-div img{
+        display: none;
+    }
+    .section-div {
+        background-image: url(fotos/programmer-icon-filled-programmer-icon-website-design-mobile-app-development-programmer-icon-filled-occupation-157817734.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .section-div a{
+        background-color: black;
+    }
+    header .navegacao{
+        display: none;
+    }
+    header i {
+        color: white;
+        font-size: 2em;
+    }
+    .section-div div h2{
+        color: black;
+    }
+}
+
+@media(max-width: 980px){
+    .sobre img{
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+
+    .sobre_conteudo{
+        grid-column: 1/-1;
+    }
 }
 
 /* Configurando o footer */
