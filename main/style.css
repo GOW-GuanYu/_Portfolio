@@ -24,7 +24,7 @@ header{
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 header h1{
     color: purple;
@@ -33,6 +33,20 @@ header h1{
 }
 header span{
     color: white;
+}
+header .navegacao.ativado {
+    background: linear-gradient(rgba(43,42,42,0.176), rgba(46,46,46,0.724));
+    color: white;
+    position: absolute;
+    display: grid;
+    top: 80px;
+    z-index: 5;
+    padding: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    right: 10px;
+    animation: sobeSecao .8s ease-in-out forwards;
 }
 
 /* Configurando o Nav  */
