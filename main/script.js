@@ -16,9 +16,9 @@
 const ativaMenu = document.querySelector('.fa-bars');
 const navMenu = document.querySelector('header .navegacao')
 
-ativaMenu.addEventListener('click', ()=>(
+ativaMenu.addEventListener('click', ()=>{
 
-    ativaMenu.classList.toggle('fa-x')(
+    ativaMenu.classList.toggle('fa-x')
     navMenu.classList.toggle('ativado')
 
-)))
+})

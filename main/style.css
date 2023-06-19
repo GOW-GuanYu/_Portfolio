@@ -108,8 +108,8 @@ header .navegacao li a:hover::after{
 }
 .section-div div p{
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    color: grey;
+    font-weight: 120;
+    color: ghostwhite;
 }
 .section-div div a{
     justify-self: start;
@@ -256,7 +256,10 @@ main #sobre{
     font-size: 1.5em;
 }
 .sobre_info p{
-    font-size: .9em;
+    font-size: 0.85em;
+}
+.sobre_info span{
+    color: white;
 }
 
 @keyframes sobeSecao {
@@ -277,7 +280,7 @@ main #sobre{
     padding: 80px;
 }
 .my_service{
-    padding: 60px;
+    padding: 80px;
     color: white;
 }
 .my_service ul{
@@ -293,10 +296,10 @@ main #sobre{
     position: relative;
     background-color: #222;
     text-align: center;
-    max-width: 400px;
-    height: 300px;
+    max-width: 250px;
+    min-height: 400px;
     gap: 30px;
-    padding: 10px;
+    padding: 5px;
     align-content: center;
     border-radius: 6px;
 }
@@ -306,13 +309,13 @@ main #sobre{
 }
 .my_service ul li h3{
     color: white;
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-family: 'Poppins',sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 .my_service ul li p{
     color: grey;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .my_service li::before{
     content: '';
@@ -352,6 +355,103 @@ main #sobre{
     border-left: 2px solid purple; /*mudar para purple*/
 }
 
+/* Experiências */
+
+.meu_resumo{
+    color: white;
+}
+
+.resumo_generico{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+.resumo_generico h2{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    background-color: purple;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 5px;
+}
+.resumo_generico h2 i{
+    margin-right: 10px;
+}
+
+.experiencia{
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.experiencia_conteudo ul{
+    color: purple;
+    gap: 10px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.resumo_generico .experiencia_conteudo div{
+    background-color: #222;
+    padding: 10px;
+    position: relative;
+}
+.resumo_generico .experiencia_conteudo div h3{
+    color: rgb(151, 0, 151);
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+.resumo_generico .experiencia_conteudo div::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-block;
+}
+.educacao{
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Meus Cursos e Diplomas Universitários*/
+
+.resumo_generico .educacao_conteudo div{
+    background-color: #222;
+    padding: 10px;
+
+    position: relative;
+}
+.educacao_conteudo ul{
+    color: purple;
+    gap: 10px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.resumo_generico .educacao_conteudo div::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-block;
+}
+.resumo_generico .educacao_conteudo div h3{
+    color: rgb(151, 0, 151);
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+.resumo_generico .educacao_conteudo div span{
+    color: rgb(197, 197, 197);
+    font-style: italic;
+}
 /* Responsividade */
 
 @media(max-width: 1045px){
