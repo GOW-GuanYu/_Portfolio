@@ -474,6 +474,11 @@ main #sobre{
         color: white;
         font-size: 2em;
     }
+    .section-div div p{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 800;
+    }
     .section-div div h2{
         color: black;
     }
