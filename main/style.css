@@ -409,7 +409,7 @@ main #sobre{
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
     position: absolute;
-    top: -18px;
+    top: -16px;
     left: 30px;
     display: inline-block;
 }
@@ -439,7 +439,7 @@ main #sobre{
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
     position: absolute;
-    top: -18px;
+    top: -16px;
     left: 30px;
     display: inline-block;
 }
@@ -496,3 +496,68 @@ main #sobre{
 }
 
 /* Configurando o footer */
+.cursos{
+    color: white;
+    margin-top: 50px;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    background-color: #222;
+    justify-self: center;
+}
+.cursos li{
+    color: white;
+}
+
+
+.minhas_habilidades h2{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: purple;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    margin-bottom: 35px;
+    justify-self: center;
+}
+.minhas_habilidades h2 i{
+    padding-right: 12px;
+}
+
+.conteudo_habilidades{
+    font-size: 1.5em;
+    grid-column: 1/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.conteudo_habilidades h3{
+    font-size: 1em;
+    text-align: justify;
+}
+.conteudo_habilidades h3 i{
+    padding-left: 31px;
+    margin: 10px 20px;
+    font-size: 35px;
+}
+.conteudo_habilidades .html i{
+    color: orangered;
+}
+.conteudo_habilidades .css i{
+    color: blue;
+    padding-left: 37px;
+}
+.conteudo_habilidades .bootstrap i{
+    color: #190040;
+}
+.conteudo_habilidades .javascript i{
+    color: yellow;
+}
+.conteudo_habilidades .node i{
+    color: green;
+}
+.conteudo_habilidades ul{
+    display: flex;
+}
+.conteudo_habilidades ul li{
+    margin-bottom: 10px;
+}
