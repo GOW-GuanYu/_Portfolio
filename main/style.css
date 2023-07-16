@@ -259,6 +259,15 @@ main #sobre{
 .sobre_info p{
     font-size: 0.85em;
 }
+.sobre_info a{
+    text-decoration: underline;
+    color: crimson;
+    font-weight: 600;
+}
+.sobre_info a:hover{
+    color: purple;
+    transition: .5s;
+}
 .sobre_info span{
     color: white;
 }
@@ -534,18 +543,18 @@ main #sobre{
 .conteudo_habilidades h3{
     font-size: 1em;
     text-align: justify;
+    padding-bottom: 20px;
+    padding-right: 5px;
 }
 .conteudo_habilidades h3 i{
-    padding-left: 31px;
-    margin: 10px 20px;
     font-size: 35px;
+    justify-content: center;
 }
 .conteudo_habilidades .html i{
     color: orangered;
 }
 .conteudo_habilidades .css i{
     color: blue;
-    padding-left: 37px;
 }
 .conteudo_habilidades .bootstrap i{
     color: #190040;
