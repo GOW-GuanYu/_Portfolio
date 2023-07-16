@@ -206,7 +206,7 @@ main #sobre{
     border-radius: 4px;
     filter: blur(0);
 }
-.sobre img:hover {
+#sobre img:hover {
     transition: .5s ease-in;
     filter: blur(1px);
 }
