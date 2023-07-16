@@ -1,4 +1,3 @@
-# _Portfolio
- Este é meu Portfólio 
-
- //// AINDA EM CONSTRUÇÃO!!! ////
+# Portfolio
+ Este é meu Portfólio:
+ https://gow-guanyu.github.io/_Portfolio/main/index.html
